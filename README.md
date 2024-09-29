@@ -59,23 +59,33 @@ model = train_model(X, y)
 save_model(model)
 ```
 
-## Requirements
+## Dependencies
 
-- pandas
-- spacy
-- re
-- telethon
-- vaderSentiment
-- sklearn
-- joblib
+To run this project, you will need the following Python packages:
 
-To install the required libraries, run:
+- `pandas`: For data manipulation and analysis.
+- `spacy`: For natural language processing tasks.
+- `telethon`: For scraping messages from Telegram.
+- `vaderSentiment`: For sentiment analysis.
+- `scikit-learn`: For machine learning tasks.
+- `joblib`: For saving the trained model.
+
+## Setup Requirements
+
+1. **Python Environment**: Ensure you have Python 3.6 or higher installed on your system.
+2. **Install Required Packages**: You can install the required packages using pip. Run the following command in your terminal:
+
 ```bash
 pip install pandas spacy telethon vaderSentiment scikit-learn joblib
+```
+
+3. **Download spaCy Model**: After installing spaCy, you need to download the English language model. Run the following command:
+
+```bash
+python -m spacy download en_core_web_sm
 ```
 
 ## Notes
 
 - You may need to modify the code if you wish to use additional features or a different model for stock prediction.
 - Ensure you have the necessary API keys and credentials to scrape data from Telegram.
-
